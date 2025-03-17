@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Davi</a>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section>
+        <div id="home" class="home">
+            <div class="home-img">
+                <img src="/assets/images/eu_ft.jpg" alt="">
+            </div>
+            <div class="home-content">
+                <h1>Olá, me chamo <span>Davi</span></h1>
+                <h3 class="typing-text"> e sou estudante de desenvolvimento de sistemas</h3>
+                <p>Curto tecnologia, inovação e tudo que envolve criar soluções inteligentes com código.</p>
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-microsoft"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="#" class="btn">Entre em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="sobre" class="sobre">
+            <div class="sobre-img">
+                <img src="/assets/images/eu_ft.jpg" alt="">
+            </div>
+
+            <div class="sobre-content">
+                <p>Sou estudante de Desenvolvimento de Sistemas no SENAI, apaixonado por tecnologia e sempre em busca de
+                    novos desafios. Tenho uma mente curiosa e analítica, gosto de resolver problemas e transformar
+                    ideias em código. Estou construindo minha jornada no mundo da programação, aprimorando minhas
+                    habilidades em diversas linguagens e frameworks. Meu objetivo é evoluir constantemente, criar
+                    soluções eficientes e impactar positivamente o universo digital. </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="portfolio" class="portfolio">
+            <div class="carrossel">
+                <div class="carrossel-container">
+                    <div class="slide">
+                        <a href="https://dafukf.github.io/simulador-davi/" target="_blank">
+                            <img src="assets/images/simulador.png" alt="">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://dafukf.github.io/calculadora/" target="_blank">
+                            <img src="assets/images/calculadora.png" alt="">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://dafukf.github.io/to-do-list/" target="_blank">
+                            <img src="assets/images/to-do_list.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="habilidades" class="habilidades">
+            <div class="container">
+                <div class="skills-layout">
+                    <div class="left">
+                        <div class="skill-card">
+                            <img src="https://img.icons8.com/ios/452/html-5.png" alt="HTML">
+                            <h3>HTML</h3>
+                            <p>Estruturar a base de sites e páginas.</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://img.icons8.com/ios/452/css3.png" alt="CSS">
+                            <h3>CSS</h3>
+                            <p>Estilizar e criar layouts responsivos.</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="skill-card">
+                            <img src="https://img.icons8.com/ios/452/javascript.png" alt="JavaScript">
+                            <h3>JavaScript</h3>
+                            <p>Adicionar interatividade e dinâmica.</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://img.icons8.com/ios/452/canva.png" alt="Canva">
+                            <h3>Canva</h3>
+                            <p>Criação de designs e gráficos de forma intuitiva.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="contato" class="contato">
+            <form action="https://formsubmit.co/dl.aquino91@outlook.com" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                </div>
+                <button type="submit" class="button">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
